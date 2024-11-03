@@ -12,6 +12,10 @@ console.log(message.value)
 message.value = 'Changed'
 
 const titleClass = ref('title')
+
+function increment() {
+  counter.count++
+}
 </script>
 
 <template>
@@ -19,6 +23,8 @@ const titleClass = ref('title')
   <p>Count is {{ counter.count }}</p>
   <h1 v-bind:class="titleClass">Make me dynamic!</h1>
   <h1 :class="titleClass">{{ message.split('').reverse().join('') }}</h1>
+  <button v-on:click="increment">Count is {{ counter.count }}</button>
+  <button @click="increment">Count is {{ counter.count }}</button>
 </template>
 
 <style>
