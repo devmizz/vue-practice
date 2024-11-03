@@ -1,14 +1,7 @@
 # vue-practice
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+Vue 찍먹을 해보겠습니다.
+일단 [튜토리얼](https://vuejs.org/tutorial/#step-1) 따라하기
 
 ## Project Setup
 
