@@ -41,7 +41,7 @@ function toggle() {
   <div>
     <input :value="text" @input="onInput" placeholder="Type here">
     <input :value="text" v-on:input="onInput" placeholder="Type here">
-    <p :class="textClass">{{text}}</p>
+    <p :class="textClass">{{ text }}</p>
   </div>
   <div>
     <button @click="toggle">Toggle</button>
@@ -54,6 +54,7 @@ function toggle() {
 .title {
   color: red;
 }
+
 .text {
   color: white;
 }
