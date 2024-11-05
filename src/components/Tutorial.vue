@@ -8,6 +8,7 @@ const message = ref('Hello World!')
 const titleClass = ref('title')
 const text = ref('')
 const textClass = ref('text')
+const isAwesome = ref(true)
 
 console.log(counter.count)
 counter.count++
@@ -21,6 +22,10 @@ function increment() {
 
 function onInput(e) {
   text.value = e.target.value
+}
+
+function toggle() {
+  isAwesome.value = !isAwesome.value
 }
 </script>
 
@@ -37,6 +42,11 @@ function onInput(e) {
     <input :value="text" @input="onInput" placeholder="Type here">
     <input :value="text" v-on:input="onInput" placeholder="Type here">
     <p :class="textClass">{{text}}</p>
+  </div>
+  <div>
+    <button @click="toggle">Toggle</button>
+    <h1 v-if="isAwesome">Vue is awesome!</h1>
+    <h1 v-else>Oh no</h1>
   </div>
 </template>
 
