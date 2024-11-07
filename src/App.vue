@@ -2,6 +2,7 @@
 import Tutorial from "@/components/Tutorial.vue";
 import ListRendering from "@/components/ListRendering.vue";
 import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue";
+import Watchers from "@/components/Watchers.vue";
 </script>
 
 <template>
@@ -14,6 +15,9 @@ import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue"
     </div>
     <div>
       <LifecycleAndTemplateRefs/>
+    </div>
+    <div>
+      <Watchers/>
     </div>
   </main>
 </template>
