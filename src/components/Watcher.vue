@@ -1,5 +1,6 @@
 <script setup>
 import {ref, watch} from 'vue'
+import Child from "@/components/Child.vue";
 
 const todoId = ref(1)
 const todoData = ref(null)
@@ -28,4 +29,6 @@ watch(todoId, fetchData)
   <button @click="todoId++" :disabled="!todoData">Fetch next todo</button>
   <p v-if="!todoData">Loading...</p>
   <pre v-else>{{ todoData }}</pre>
+
+  <Child/>
 </template>
