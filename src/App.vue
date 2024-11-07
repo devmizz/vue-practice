@@ -3,6 +3,7 @@ import Tutorial from "@/components/Tutorial.vue";
 import ListRendering from "@/components/ListRendering.vue";
 import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue";
 import Watchers from "@/components/Watcher.vue";
+import SlotParent from "@/components/SlotParent.vue";
 </script>
 
 <template>
@@ -18,6 +19,12 @@ import Watchers from "@/components/Watcher.vue";
     </div>
     <div>
       <Watchers/>
+    </div>
+
+    <div>
+      <div>
+        <SlotParent/>
+      </div>
     </div>
   </main>
 </template>

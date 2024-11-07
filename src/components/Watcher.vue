@@ -32,7 +32,9 @@ watch(todoId, fetchData)
   <p v-if="!todoData">Loading...</p>
   <pre v-else>{{ todoData }}</pre>
 
-  <Child :msg="propsMessage"/>
-  <Child @response="(childMsg) => childMessage = childMsg"/>
-  <p>child message: {{ childMessage }}</p>
+  <div>
+    <Child :msg="propsMessage"/>
+    <Child @response="(childMsg) => childMessage = childMsg"/>
+    <p>child message: {{ childMessage }}</p>
+  </div>
 </template>
