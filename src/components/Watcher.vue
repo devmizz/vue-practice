@@ -5,6 +5,7 @@ import Child from "@/components/Child.vue";
 const todoId = ref(1)
 const todoData = ref(null)
 const propsMessage = ref("props message")
+const childMessage = ref("Not yet")
 
 async function fetchData() {
   todoData.value = null
@@ -32,5 +33,6 @@ watch(todoId, fetchData)
   <pre v-else>{{ todoData }}</pre>
 
   <Child :msg="propsMessage"/>
-  <Child/>
+  <Child @response="(childMsg) => childMessage = childMsg"/>
+  <p>child message: {{ childMessage }}</p>
 </template>

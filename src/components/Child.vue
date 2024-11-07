@@ -2,6 +2,9 @@
 const props = defineProps({
   msg: String
 })
+
+const emit = defineEmits(['response'])
+emit('response', "This message comes from child")
 </script>
 
 <template>
