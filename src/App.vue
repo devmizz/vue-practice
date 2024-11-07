@@ -1,6 +1,7 @@
 <script setup>
 import Tutorial from "@/components/Tutorial.vue";
 import ListRendering from "@/components/ListRendering.vue";
+import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue";
 </script>
 
 <template>
@@ -8,9 +9,11 @@ import ListRendering from "@/components/ListRendering.vue";
     <div>
       <Tutorial/>
     </div>
-
     <div>
       <ListRendering/>
+    </div>
+    <div>
+      <LifecycleAndTemplateRefs/>
     </div>
   </main>
 </template>
