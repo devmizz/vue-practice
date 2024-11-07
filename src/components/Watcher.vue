@@ -4,6 +4,7 @@ import Child from "@/components/Child.vue";
 
 const todoId = ref(1)
 const todoData = ref(null)
+const propsMessage = ref("props message")
 
 async function fetchData() {
   todoData.value = null
@@ -30,5 +31,6 @@ watch(todoId, fetchData)
   <p v-if="!todoData">Loading...</p>
   <pre v-else>{{ todoData }}</pre>
 
+  <Child :msg="propsMessage"/>
   <Child/>
 </template>
