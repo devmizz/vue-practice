@@ -1,5 +1,5 @@
 <script setup>
-import SlotChild from "@/components/SlotChild.vue";
+import SlotChild from "@/components/tutorial/SlotChild.vue";
 import {ref} from "vue";
 
 const unslotProps = ref("slot 안 넘겨")

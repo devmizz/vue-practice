@@ -1,6 +1,6 @@
 <script setup>
 import {ref, watch} from 'vue'
-import Child from "@/components/Child.vue";
+import Child from "@/components/tutorial/Child.vue";
 
 const todoId = ref(1)
 const todoData = ref(null)
